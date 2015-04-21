@@ -146,4 +146,5 @@ SET(FLOWSTAR_SRCS
 
 add_library(flowstar ${FLOWSTAR_SRCS})
 add_executable(flowstar-bin modelParser.cpp modelParser.tab.cpp modelLexer.cc)
+SET_TARGET_PROPERTIES(flowstar-bin PROPERTIES OUTPUT_NAME flowstar)
 target_link_libraries(flowstar-bin flowstar ${EXTRA_LIBS})
