@@ -9,7 +9,7 @@
 ---*/
 
 #include "modelParser.h"
-#include "modelParser.tab.h"
+#include "modelParser.tab.hpp"
 %}
 
 delim [ \t\r]
